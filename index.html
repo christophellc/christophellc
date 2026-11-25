@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christophe LLC — tools, hardware, construction supplies, and home improvement essentials.">
+  <title>Christophe LLC | Hardware & Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">TOOLS. HARDWARE. PROJECT-READY SUPPLIES.</div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-mark">C</span>
+      <span>CHRISTOPHE LLC</span>
+    </a>
+
+    <nav id="nav">
+      <a href="#categories">Categories</a>
+      <a href="#shop">Shop</a>
+      <a href="#contractors">Contractors</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn">Cart <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">BUILT FOR REAL WORK</p>
+        <h1>Tools and supplies<br>for every project.</h1>
+        <p class="hero-copy">
+          Reliable hardware, power tools, safety equipment, and construction essentials
+          for professionals, homeowners, and everyday repairs.
+        </p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn primary">Shop Products</a>
+          <a href="#contractors" class="btn secondary">Contractor Solutions</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div><small>FEATURED</small><strong>Power Tools</strong><span>Built for demanding jobs</span></div>
+        <div><small>ESSENTIALS</small><strong>Construction Supplies</strong><span>For repairs and renovation</span></div>
+        <div><small>SAFETY</small><strong>Protective Equipment</strong><span>Work with confidence</span></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>8+</strong><span>Product Categories</span></div>
+      <div><strong>Pro + DIY</strong><span>Project Solutions</span></div>
+      <div><strong>Home + Jobsite</strong><span>Flexible Use</span></div>
+      <div><strong>Reliable</strong><span>Hardware Essentials</span></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">SHOP BY CATEGORY</p>
+          <h2>Everything you need to get the job done.</h2>
+        </div>
+        <p>From essential hand tools to project-ready supplies, Christophe LLC helps keep your work moving.</p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category c1"><div><span>01</span><h3>Power Tools</h3><a href="#shop">Shop →</a></div></article>
+        <article class="category c2"><div><span>02</span><h3>Hand Tools</h3><a href="#shop">Shop →</a></div></article>
+        <article class="category c3"><div><span>03</span><h3>Construction</h3><a href="#shop">Shop →</a></div></article>
+        <article class="category c4"><div><span>04</span><h3>Safety Gear</h3><a href="#shop">Shop →</a></div></article>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">FEATURED PRODUCTS</p>
+          <h2>Project essentials.</h2>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="power">Power Tools</button>
+          <button class="filter" data-filter="hand">Hand Tools</button>
+          <button class="filter" data-filter="supplies">Supplies</button>
+          <button class="filter" data-filter="safety">Safety</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="power">
+          <div class="product-image p1"><span class="tag">BESTSELLER</span></div>
+          <div class="product-info"><div><h3>20V Cordless Drill Kit</h3><p>2 Batteries + Charger</p></div><strong>$129</strong></div>
+          <button class="add-btn" data-name="20V Cordless Drill Kit">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="power">
+          <div class="product-image p2"></div>
+          <div class="product-info"><div><h3>7-1/4" Circular Saw</h3><p>High-Output Motor</p></div><strong>$149</strong></div>
+          <button class="add-btn" data-name="Circular Saw">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="hand">
+          <div class="product-image p3"><span class="tag">NEW</span></div>
+          <div class="product-info"><div><h3>Mechanic Tool Set</h3><p>108 Pieces</p></div><strong>$89</strong></div>
+          <button class="add-btn" data-name="Mechanic Tool Set">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="hand">
+          <div class="product-image p4"></div>
+          <div class="product-info"><div><h3>Professional Hammer</h3><p>16 oz Claw Hammer</p></div><strong>$24</strong></div>
+          <button class="add-btn" data-name="Professional Hammer">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="supplies">
+          <div class="product-image p5"></div>
+          <div class="product-info"><div><h3>Multi-Purpose Screw Kit</h3><p>500 Piece Assortment</p></div><strong>$39</strong></div>
+          <button class="add-btn" data-name="Multi-Purpose Screw Kit">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="supplies">
+          <div class="product-image p6"></div>
+          <div class="product-info"><div><h3>Heavy-Duty Extension Cord</h3><p>50 ft Outdoor Rated</p></div><strong>$54</strong></div>
+          <button class="add-btn" data-name="Heavy-Duty Extension Cord">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="safety">
+          <div class="product-image p7"><span class="tag">ESSENTIAL</span></div>
+          <div class="product-info"><div><h3>Safety Helmet</h3><p>Adjustable Fit</p></div><strong>$29</strong></div>
+          <button class="add-btn" data-name="Safety Helmet">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-category="safety">
+          <div class="product-image p8"></div>
+          <div class="product-info"><div><h3>Work Gloves</h3><p>Heavy-Duty Grip</p></div><strong>$18</strong></div>
+          <button class="add-btn" data-name="Work Gloves">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="contractors" id="contractors">
+      <div class="contractor-image"></div>
+      <div class="contractor-copy">
+        <p class="eyebrow">FOR CONTRACTORS & PROS</p>
+        <h2>Built to support bigger jobs.</h2>
+        <p>Christophe LLC offers practical solutions for contractors, builders, maintenance teams, and trade professionals who need dependable tools and supplies.</p>
+        <div class="contractor-list">
+          <div><strong>Bulk Orders</strong><span>Project-ready quantities</span></div>
+          <div><strong>Jobsite Essentials</strong><span>Tools and safety supplies</span></div>
+          <div><strong>Reliable Selection</strong><span>Products for daily use</span></div>
+        </div>
+        <a href="#contact">Request Project Support →</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow dark">ABOUT CHRISTOPHE LLC</p>
+        <h2>Dependable tools for real-world projects.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Christophe LLC is a modern hardware company focused on tools, construction supplies, repair essentials, and practical products for homes, workshops, and jobsites.</p>
+        <div class="about-grid">
+          <div><strong>Reliable</strong><span>Products made for real work</span></div>
+          <div><strong>Practical</strong><span>Essentials for common projects</span></div>
+          <div><strong>Professional</strong><span>Solutions for trade customers</span></div>
+          <div><strong>Accessible</strong><span>Options for homeowners and DIY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">PROJECT SUPPORT</p>
+        <h2>Tell us what you're working on.</h2>
+        <p>Contact Christophe LLC for product questions, bulk orders, or project support.</p>
+      </div>
+
+      <form id="contactForm">
+        <div class="form-grid">
+          <input id="name" type="text" placeholder="Your name" required>
+          <input id="email" type="email" placeholder="Email address" required>
+          <select>
+            <option>Project type</option>
+            <option>Home Improvement</option>
+            <option>Construction</option>
+            <option>Maintenance</option>
+            <option>Contractor / Trade</option>
+            <option>Other</option>
+          </select>
+          <input type="text" placeholder="Estimated order size">
+        </div>
+        <textarea placeholder="Tell us what tools or supplies you need"></textarea>
+        <button type="submit">Send Request</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-mark">C</span><span>CHRISTOPHE LLC</span></a>
+        <p>Reliable tools, hardware, construction supplies, and home improvement essentials.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">Power Tools</a>
+        <a href="#shop">Hand Tools</a>
+        <a href="#shop">Safety Gear</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#contractors">Contractors</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Christophe LLC. All rights reserved.</span>
+      <span>Tools for every project.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart</div>
+  <script src="script.js"></script>
+</body>
+</html>
